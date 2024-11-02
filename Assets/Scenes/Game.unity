@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &505801302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 19462406783479187, guid: ceee132b3ae22f9448421a0238241cb1, type: 3}
-  m_PrefabInstance: {fileID: 3101328254479812824}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1954329545077158988, guid: 4d42f934058dfc7449e5f5c692acd9b3, type: 3}
   enemy: {fileID: 8835977995716492249, guid: fecd1607dc756ef4895c896d60883c7d, type: 3}
-  enemy2: {fileID: 505801302}
+  enemy2: {fileID: 19462406783479187, guid: ceee132b3ae22f9448421a0238241cb1, type: 3}
 --- !u!4 &2068399766
 Transform:
   m_ObjectHideFlags: 0
