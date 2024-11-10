@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
 {
@@ -13,12 +15,14 @@ public class Player : MonoBehaviour
     private int lives;
 
     public GameObject bullet;
+    public TextMeshProUGUI livesText;
 
     // Start is called before the first frame update
     void Start()
     {
         speed = 6f;
         lives = 3;
+        livesText.text = "Lives: " + lives;
     }
 
     // Update is called once per frame
@@ -54,6 +58,7 @@ public class Player : MonoBehaviour
     public void LoseALife()
     {
         lives--;
+        livesText.text = "Lives: " + lives;
         //lives -= 1;
         //lives = lives - 1;
         if (lives == 0)
