@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI powerupText;
 
     private int score;
+    private float x;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Restart();   
+        Restart();
     }
 
     void CreateEnemyOne()
@@ -83,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        if(Input.GetKeyDown(KeyCode.R) && isPlayerAlive == false)
+        if (Input.GetKeyDown(KeyCode.R) && isPlayerAlive == false)
         {
             SceneManager.LoadScene("Game");
         }
@@ -103,4 +104,6 @@ public class GameManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(powerDown, Camera.main.transform.position);
     }
+
+     
 }
